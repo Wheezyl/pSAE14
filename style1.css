@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -14,16 +18,17 @@ body {
 }
 
 h1, h2, .logo img {
-    font-family: 'Montserrat', sans-serif; 
+    font-family: 'Roboto Condensed', sans-serif; 
     font-weight: 700;
-    color: #c91439; 
+    color: #e50914; 
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
 header {
-    background-color: #222;
+    background-color: #000;
     padding: 10px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    
 }
 
 nav {
@@ -46,7 +51,7 @@ nav {
     font-weight: 700;
     display: flex;
     list-style-type: none;
-    margin: auto;
+    margin-right: 73vh;
     
 }
 
@@ -55,7 +60,7 @@ nav {
 }
 
 .pages li:hover{
-    background-color: goldenrod;
+    background-color: #e50914;
     border-radius: 8px; 
     padding: 2px 6px;
 }
@@ -67,6 +72,56 @@ nav {
 }
 
 
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+
+}
+
+.loader span {
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: bounce 1.5s infinite;
+}
+
+.loader span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.loader span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.loader span:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.loader span:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.content {
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+
 .bloc {
     background-size: cover;
     background-position: center;
@@ -74,7 +129,8 @@ nav {
     display: flex;
     justify-content: center;
     text-align: center;
-    animation: changeBackground 10s infinite;
+    align-items: center;
+    animation: changeBackground 20s infinite;
 }
 
 
@@ -82,11 +138,17 @@ nav {
     0% {
         background-image: url('img/T1win3.png');
     }
-    33% {
+    20% {
         background-image: url('img/T1win1.png');
     }
-    66% {
+    40% {
         background-image: url('img/T1win2.png');
+    }
+    60% {
+        background-image: url('img/T1win4.png');
+    }
+    80% {
+        background-image: url('img/T1win6.png');
     }
     100% {
         background-image: url('img/T1win3.png');
@@ -96,7 +158,7 @@ nav {
 
 .bloc h1 {
     font-size: 4rem;
-    color: #c91439;
+    color: #e50914;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
 }
 
@@ -107,6 +169,11 @@ nav {
 }
 
 
+.separator {
+    border: none;
+    border-top: 5px solid #e50914;
+}
+
 .team-intro {
     text-align: center;
     padding: 50px 0;
@@ -114,7 +181,7 @@ nav {
 
 .team-intro h2 {
     font-size: 3rem;
-    color: #c91439;
+    color: #e50914;
 }
 
 .team {
@@ -152,15 +219,14 @@ nav {
 
 
 footer {
-    background-color: #222;
+    background-color: #000;
     text-align: center;
     padding: 20px;
-    margin-top: 50px;
+
 }
 
 footer a {
     text-decoration: none;
-    color: #c91439;
+    color: #e50914;
 }
-
 

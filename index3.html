@@ -5,76 +5,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>T1 Esports - Worlds 2024</title>
+    <title>T1, meilleure équipe du monde</title>
     <link rel="stylesheet" href="style1.css">
     <script src="https://kit.fontawesome.com/c7f9740096.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="icon" href="img/file.png" sizes="64x64" type="image/png">
+    
 
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="img/logt1.png" alt="T1 Esports Logo">
-            </div>
-            <ul class="pages">
-                <li><a href="index3.html">Accueil</a></li>
-                <li><a href="#">Saison 2024</a></li>
-                <li><a href="#">LCK Regional Qualifier</a></li>
-                <li><a href="#">Rondes Suisses</a></li>
-            </ul>
-        </nav>
-    </header>
 
-
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+     </div>
     
+    <script>
+        
+        window.onload = function () {
+            setTimeout(function () {
+                document.querySelector('.loader').style.display = 'none'; 
+                document.querySelector('.content').style.display = 'block';
+            }, 3000);
+        };
+    </script>
 
-    <section class="bloc">
-        <div class="b1">           
-            <h1>Bienvenue sur le parcours de T1 aux Worlds 2024</h1>
-            <p>Suivez l'aventure de la meilleure équipe de tous les temps sur League of Legends</p>
-        </div>
-    </section>
 
-    <section class="team-intro">
-        <h2>Rencontrez l'équipe</h2>
-        <div class="team">
-            <div class="joueurs">
-                <a href="zeus.html" target="_blank">
-                    <img src="img/zeus.jpg" alt="zeus">
-                </a>
-                <p><strong>Zeus</strong><br>Rôle: Toplaner</p>
+    <div class="content">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="img/logt1.png" alt="T1 Esports Logo">
+                </div>
+                <ul class="pages">
+                    <li><a href="index3.html">Accueil</a></li>
+                    <li><a href="saison.html">Saison 2024</a></li>
+                    <li><a href="#">LCK Regional Qualifier</a></li>
+                    <li><a href="#">Rondes Suisses</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        
+
+        <section class="bloc">
+            <div class="b1">           
+               <h1>Bienvenue sur le parcours de T1 aux Worlds 2024</h1>
+                <p>Suivez l'aventure de la meilleure équipe de tous les temps sur League of Legends</p>
             </div>
-            <div class="joueurs">
-                <img src="img/oner.jpg" alt="oner">
-                <p><strong>Oner</strong><br>Rôle: Jungler</p>
-            </div>
-            <div class="joueurs">
-                <img src="img/faker.jpg" alt="faker">
-                <p><strong>FAKER</strong><br>Rôle: midlaner</p>
-            </div>
-            <div class="joueurs">
-                <img src="img/gumayusi.jpg" alt="gumayusi">
-                <p><strong>Gumayusi</strong><br>Rôle: AD Carry</p>
-            </div>
-            <div class="joueurs">
-                <img src="img/keria.jpg" alt="keria">
-                <p><strong>Keria</strong><br>Rôle: Support</p>
-            </div>
+        </section>
+
+        <hr class="separator">
+
+        <section class="team-intro">
+            <h2>Rencontrez l'équipe</h2>
+            <div class="team">
+                <div class="joueurs">
+                    <a href="zeus.html" target="_blank">
+                        <img src="img/zeus.jpg" alt="zeus">
+                    </a>
+                   <p><strong>Zeus</strong><br>Rôle: Toplaner</p>
+                </div>
+                <div class="joueurs">
+                    <img src="img/oner.jpg" alt="oner">
+                    <p><strong>Oner</strong><br>Rôle: Jungler</p>
+                </div>
+                <div class="joueurs">
+                   <img src="img/faker.jpg" alt="faker">
+                    <p><strong>FAKER</strong><br>Rôle: midlaner</p>
+                </div>
+                <div class="joueurs">
+                    <img src="img/gumayusi.jpg" alt="gumayusi">
+                   <p><strong>Gumayusi</strong><br>Rôle: AD Carry</p>
+               </div>
+                <div class="joueurs">
+                    <img src="img/keria.jpg" alt="keria">
+                    <p><strong>Keria</strong><br>Rôle: Support</p>
+                </div>
             
-        </div>
-    </section>
+            </div>
+        </section>
+
+        <hr class="separator">
+        <footer>
+            <p>&copy; 2024 T1 Esports | Suivez T1 sur <a href="https://x.com/t1lol" target="_blank"><i class="fa-brands fa-x-twitter" ></i></a> | <a href="https://www.instagram.com/t1lol/" target="_blank"><i class="fa-brands fa-instagram"></i></a> | <a href="https://www.facebook.com/T1LoL/?locale=fr_FR" target="_blank"><i class="fa-brands fa-facebook"></i></a></p>
+        </footer>
+    </div>
 
     
     
-
     
-    <footer>
-        <p>&copy; 2024 T1 Esports | Suivez T1 sur <a href="#"><i class="fa-brands fa-x-twitter"></i></a> | <a href="#"><i class="fa-brands fa-instagram"></i></a> | <a href="#"><i class="fa-brands fa-facebook"></i></a></p>
-    </footer>
 
 </body>
 
