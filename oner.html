@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Oner - Worlds 2024</title>
+    <link rel="stylesheet" href="css/styleo.css">
+    <script src="https://kit.fontawesome.com/c7f9740096.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/file.png" sizes="64x64" type="image/png">
+</head>
+<body>
+
+    <div class="loader">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                document.querySelector('.loader').style.display = 'none'; 
+                document.querySelector('.content').style.display = 'block';
+            }, 3000);
+        };
+    </script>
+
+    <div class="content">
+        <header>
+            <nav>
+                <div class="logo">
+                    <img src="img/logt1.png" alt="T1 Esports Logo">
+                </div>
+                <ul class="pages">
+                    <li><a href="index3.html">Accueil</a></li>
+                    <li><a href="saison.html">Saison 2024</a></li>
+                    <li><a href="#">LCK Regional Qualifier</a></li>
+                    <li><a href="#">Rondes Suisses</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="player-banner">
+            <div class="player-banner-text">
+                <h1>Oner</h1>
+                <p>Jungler - T1</p>
+            </div>
+        </section>
+
+        <section class="player-content">
+            <div class="player-info">
+                <div class="player-image">
+                    <img src="img/oner.jpg" alt="Oner">
+                </div>
+                <div class="player-bio">
+                    <h2>Le parcours de Oner jusqu'aux Worlds 2024</h2>
+                    <p>Oner, jungler de T1, a émergé comme l'un des meilleurs joueurs de la région LCK, apportant une stabilité précieuse à l'équipe...</p>
+                </div>
+            </div>
+
+            <div class="player-stats">
+                <h3>Statistiques de Carrière</h3>
+                <div class="stats-grid">
+                    <div class="stats-item">
+                        <strong>Matchs joués :</strong>
+                        <p>180</p>
+                    </div>
+                    <div class="stats-item">
+                        <strong>Victoires :</strong>
+                        <p>130</p>
+                    </div>
+                    <div class="stats-item">
+                        <strong>Défaites :</strong>
+                        <p>50</p>
+                    </div>
+                    <div class="stats-item">
+                        <strong>KDA moyen :</strong>
+                        <p>4.3</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="player-moves">
+                <h3>Meilleurs Moments</h3>
+                <div class="move-list">
+                    <div class="move-item">
+                        <h4>Worlds 2024 - Phase de groupes</h4>
+                        <p>Oner a réalisé une performance magistrale avec Lee Sin, sécurisant des objectifs clés pour son équipe contre G2.</p>
+                    </div>
+                    <div class="move-item">
+                        <h4>Finale LCK 2023</h4>
+                        <p>Son contrôle de la jungle avec Graves a permis à T1 de dominer les séries contre DK, assurant leur place en Worlds.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 T1 Esports | Suivez T1 sur <a href="https://x.com/t1lol" target="_blank"><i class="fa-brands fa-x-twitter" ></i></a> | <a href="https://www.instagram.com/t1lol/" target="_blank"><i class="fa-brands fa-instagram"></i></a> | <a href="https://www.facebook.com/T1LoL/?locale=fr_FR" target="_blank"><i class="fa-brands fa-facebook"></i></a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
