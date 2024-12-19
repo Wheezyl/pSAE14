@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Yeseva One", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+    background-color: #111;
+    color: #fff;
+}
+
+h1, h2, .logo img {
+    font-family: 'Roboto Condensed', sans-serif; 
+    font-weight: 700;
+    color: #e50914; 
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+header {
+    background-color: #000;
+    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo  {
+    margin-right: 1px;
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+
+
+.pages {
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 700;
+    display: flex;
+    list-style-type: none;
+    margin-right: 73vh;
+    
+}
+
+.pages li {
+    margin-left: 20px;
+}
+
+.pages li:hover{
+    background-color: #e50914;
+    border-radius: 8px; 
+    padding: 2px 6px;
+}
+
+.pages a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+
+}
+
+.loader span {
+    width: 20px;
+    height: 20px;
+    background-color: gold;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    animation: bounce 1.5s infinite;
+}
+
+.loader span:nth-child(2) {
+    animation-delay: 0.3s;
+}
+
+.loader span:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+.loader span:nth-child(4) {
+    animation-delay: 0.9s;
+}
+
+.loader span:nth-child(5) {
+    animation-delay: 1.2s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.content {
+    display: none;
+    transition: opacity 1s ease-in-out;
+}
+
+
+.bloc {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    animation: changeBackground 20s infinite;
+}
+
+
+@keyframes changeBackground {
+    0% {
+        background-image: url('../img/T1win3.png');
+    }
+    20% {
+        background-image: url('../img/T1win1.png');
+    }
+    40% {
+        background-image: url('../img/T1win2.png');
+    }
+    60% {
+        background-image: url('../img/T1win4.png');
+    }
+    80% {
+        background-image: url('../img/T1win6.png');
+    }
+    100% {
+        background-image: url('../img/T1win3.png');
+    }
+}
+
+
+.bloc h1 {
+    font-size: 4rem;
+    color: #e50914;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.bloc p {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #fff;
+}
+
+
+.separator {
+    border: none;
+    border-top: 5px solid #e50914;
+}
+
+.team-intro {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.team-intro h2 {
+    font-size: 3rem;
+    color: #e50914;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.joueurs {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.joueurs img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.joueurs p {
+    margin-top: 10px;
+}
+
+
+
+.joueurs:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+.joueurs {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.joueurs::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: -100%;
+    width: 300%;
+    height: 300%;
+    background: linear-gradient(45deg, #e50914, transparent);
+    opacity: 0;
+    z-index: 0;
+    transition: all 0.5s ease-in-out;
+    transform: rotate(45deg);
+}
+
+.joueurs:hover::before {
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+}
+
+.joueurs img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.joueurs:hover img {
+    transform: scale(1.1);
+}
+
+.joueurs p {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    z-index: 1;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+.joueurs:hover p {
+    color: #e50914;
+}
+
+.joueurs .stars {
+    position: absolute;
+    top: 5px; /* Ajuste la position des étoiles */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.joueurs .stars i {
+    color:gold; /* Couleur des étoiles */
+    margin: 0 3px;
+    font-size: 1.5rem;
+}
+
+
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 20px;
+
+}
+
+footer a {
+    text-decoration: none;
+    color: #e50914;
+}
+
